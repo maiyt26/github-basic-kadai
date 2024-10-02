@@ -1,0 +1,20 @@
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "hello_world.txtを追加"
+[main 967f138] hello_world.txtを追加
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> git commit -m "日本語訳を追記"       
+[main 12cdc0d] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\git_challenge> git log
+commit 12cdc0d41e325fa8ab7f5d06167098575686f15c (HEAD -> main)
+Author: maiyt26 <pjm29029@gmail.com>
+Date:   Wed Oct 2 23:11:55 2024 +0900
+
+    日本語訳を追記
+
+commit 967f1383ffcebe1de38e521f81c641f08ad0b49e
+Author: maiyt26 <pjm29029@gmail.com>
+Date:   Wed Oct 2 23:09:56 2024 +0900
+
+    hello_world.txtを追加
