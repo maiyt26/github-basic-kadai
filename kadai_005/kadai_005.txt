@@ -35,9 +35,6 @@ PS C:\git_challenge> # hello_world.txtをコミット
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 hello_world.txt
 PS C:\git_challenge> # 変更履歴を表示
->> git log
-commit 42a50507869345e6c6ee649c1e92c69e128c41f8 (HEAD -> main)
-Author: maiyt26 <pjm29029@gmail.com>
-Date:   Sun Oct 6 14:18:43 2024 +0900
-
-    日本語訳を追記
+PS C:\git_challenge> git log --oneline
+42a5050 (HEAD -> main) 日本語訳を追記
+PS C:\git_challenge> 
