@@ -1,0 +1,43 @@
+PS C:\git_challenge> # Developmentフォルダ直下にgit_challengeフォルダを作成
+PS C:\git_challenge> mkdir C:\git_challenge 
+
+
+    ディレクトリ: C:\
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/10/06     14:17                git_challenge
+
+
+PS C:\git_challenge> # git_challengeフォルダに移動
+PS C:\git_challenge> cd C:\git_challenge
+PS C:\git_challenge> # ローカルリポジトリを作成
+PS C:\git_challenge> git init
+Initialized empty Git repository in C:/git_challenge/.git/
+PS C:\git_challenge> # hello_world.txtをインデックスに登録
+PS C:\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.txt' did not match any files
+PS C:\git_challenge> # hello_world.txtをコミット
+PS C:\git_challenge> git commit -m "hello_world.txtを追加"
+On branch main
+
+Initial commit
+
+nothing to commit (create/copy files and use "git add" to track)
+PS C:\git_challenge> # hello_world.txtに1行追記
+PS C:\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\git_challenge> # hello_world.txtをインデックスに登録
+PS C:\git_challenge> git add hello_world.txt
+PS C:\git_challenge> # hello_world.txtをコミット
+>> git commit -m "日本語訳を追記"
+[main (root-commit) 42a5050] 日本語訳を追記
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\git_challenge> # 変更履歴を表示
+>> git log
+commit 42a50507869345e6c6ee649c1e92c69e128c41f8 (HEAD -> main)
+Author: maiyt26 <pjm29029@gmail.com>
+Date:   Sun Oct 6 14:18:43 2024 +0900
+
+    日本語訳を追記
